@@ -26,6 +26,13 @@ A modern, node-based pipeline builder built with **React (ReactFlow)** and **Fas
 
 ---
 
+## 🌐 Live Deployment
+
+- **Backend (Render)**: [https://node-flow-ai-builder.onrender.com](https://node-flow-ai-builder.onrender.com)
+- **Frontend**: [Localhost:3000] (Ready for Vercel/Netlify deployment)
+
+---
+
 ## 🛠️ Setup & Installation
 
 ### Prerequisites
@@ -43,10 +50,9 @@ The app will be available at `http://localhost:3000`.
 ### 2. Backend Setup
 ```bash
 cd backend
-# Recommended: Use a virtual environment
 python -m venv .venv
 source .venv/bin/activate  # Or .venv\Scripts\activate on Windows
-pip install fastapi uvicorn
+pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 The API serves at `http://localhost:8000`.
@@ -63,4 +69,5 @@ The API serves at `http://localhost:8000`.
 
 ## 📝 Technologies Used
 - **Frontend**: React, ReactFlow, Zustand, Vanilla CSS.
-- **Backend**: Python, FastAPI, Pydantic.
+- **Backend**: Python, FastAPI, Pydantic (Deployed on Render).
+- **Deployment**: CORS optimized for production (Wildcard origins allowed, credentials disabled).
