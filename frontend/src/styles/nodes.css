@@ -1,0 +1,147 @@
+/* nodes.css — Styles for BaseNode and all node types */
+
+.base-node {
+  position: relative;
+  min-width: 220px;
+  background: #1a1f2e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255,255,255,0.04);
+  font-family: 'Inter', sans-serif;
+  overflow: visible;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  color: #e2e8f0;
+}
+
+.base-node:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 2px var(--node-accent, #7c3aed);
+  transform: translateY(-1px);
+}
+
+/* Header */
+.node-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 11px 11px 0 0;
+  background: var(--node-accent, #7c3aed);
+}
+
+.node-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.node-title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* Body */
+.node-body {
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Field labels and inputs inside node */
+.node-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.node-field label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+
+.node-field input,
+.node-field select,
+.node-field textarea {
+  background: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  color: #e2e8f0;
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  padding: 6px 10px;
+  outline: none;
+  transition: border-color 0.15s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.node-field input:focus,
+.node-field select:focus,
+.node-field textarea:focus {
+  border-color: var(--node-accent, #7c3aed);
+  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.2);
+}
+
+.node-field select option {
+  background: #1a1f2e;
+}
+
+.node-field textarea {
+  resize: none;
+  overflow: hidden;
+  min-height: 60px;
+  line-height: 1.5;
+}
+
+/* Handles */
+.node-handle {
+  width: 12px !important;
+  height: 12px !important;
+  border: 2px solid #1a1f2e !important;
+  border-radius: 50% !important;
+  box-shadow: 0 0 4px rgba(0,0,0,0.5);
+  cursor: crosshair !important;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.node-handle:hover {
+  transform: scale(1.4) !important;
+  box-shadow: 0 0 8px var(--node-accent, #7c3aed) !important;
+}
+
+/* Handle labels — rendered OUTSIDE the node card edge */
+.handle-label {
+  position: absolute;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #64748b;
+  pointer-events: none;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  background: #0f1623;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 3px;
+  padding: 1px 5px;
+  z-index: 10;
+}
+
+.handle-label-left {
+  /* Sits to the LEFT of the node, outside the border */
+  left: auto;
+  right: calc(100% + 10px);
+  text-align: right;
+}
+
+.handle-label-right {
+  /* Sits to the RIGHT of the node, outside the border */
+  right: auto;
+  left: calc(100% + 10px);
+  text-align: left;
+}
