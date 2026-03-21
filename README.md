@@ -28,8 +28,8 @@ A modern, node-based pipeline builder built with **React (ReactFlow)** and **Fas
 
 ## 🌐 Live Deployment
 
+- **Frontend (Vercel)**: [https://node-flow-ai-builder.vercel.app/](https://node-flow-ai-builder.vercel.app/)
 - **Backend (Render)**: [https://node-flow-ai-builder.onrender.com](https://node-flow-ai-builder.onrender.com)
-- **Frontend**: [Localhost:3000] (Ready for Vercel/Netlify deployment)
 
 ---
 
