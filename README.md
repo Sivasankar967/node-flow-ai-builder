@@ -33,21 +33,23 @@ A modern, node-based pipeline builder built with **React (ReactFlow)** and **Fas
 
 ---
 
-## 🛠️ Setup & Installation
+---
+
+## 🛠️ Local Development Setup
 
 ### Prerequisites
 - Node.js (v16+)
 - Python (v3.9+)
 
-### 1. Frontend Setup
+### 1. Frontend (Local)
 ```bash
 cd frontend
 npm install
 npm start
 ```
-The app will be available at `http://localhost:3000`.
+The local dev server will be available at `http://localhost:3000`.
 
-### 2. Backend Setup
+### 2. Backend (Local)
 ```bash
 cd backend
 python -m venv .venv
@@ -55,11 +57,11 @@ source .venv/bin/activate  # Or .venv\Scripts\activate on Windows
 pip install -r requirements.txt
 uvicorn main:app --reload
 ```
-The API serves at `http://localhost:8000`.
+The local API will serve at `http://localhost:8000`.
 
 ---
 
-## 📖 Usage
+## 📖 Usage (Production or Local)
 1. Drag nodes from the left **sidebar** onto the canvas.
 2. Connect nodes by dragging between handles.
 3. In the **Text** node, try typing `Hello {{name}}` to see a new handle appear.
