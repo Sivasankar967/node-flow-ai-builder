@@ -1,4 +1,4 @@
-# VectorShift Pipeline Builder
+#Pipeline Builder
 
 A modern, node-based pipeline builder built with **React (ReactFlow)** and **FastAPI**. This project was developed as part of the VectorShift Frontend Technical Assessment.
 
